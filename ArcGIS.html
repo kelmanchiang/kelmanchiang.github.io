@@ -1,0 +1,17 @@
+---
+layout: page
+title: ArcGIS
+category: ArcGIS
+---
+
+<h2>Posts</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'category', page.category %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+
+
+

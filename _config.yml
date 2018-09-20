@@ -25,5 +25,5 @@ github:
   repo:           https://github.com/poole/lanyon
 
 collections:
-	ArcGIS:
-		output: true
+  category:
+    output: true

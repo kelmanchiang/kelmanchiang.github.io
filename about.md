@@ -3,17 +3,28 @@ layout: page
 title: About
 ---
 
-This website documents some of my work and hopefully it helps others who may have encountered the same challenges as me.
+<p class="message">
+  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+</p>
 
-### Experience
- I currently work at the Digital Planning Lab in the Urban Redevelopment Authority. The lab is an outfit that uses technology and data to transform how we plan our city. My current job puts me on the forefront of urban-science challenges, tackling planning questions with geospatial analytics of people-centric datasets. I enjoy delving into the data, inquiring on how actionable insights can be gleaned to plan and develop my city better.
+In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
-### Geospatial & Data
-I graduated from the National University of Singapore with a degree in Geography, specialising in GIS. I started my geospatial training with ArcGIS and understood the fundamentals of programming with C/C++. I currently code in Python for my data analysis projects and am still learning from the open source everyday.
+There are currently two themes built on Poole:
 
-### Contact
-I'd love to hear from you. You can reach me at [kelman.chiang@gmail.com](mailto:kelman.chiang@gmail.com)
+* [Hyde](http://hyde.getpoole.com)
+* [Lanyon](http://lanyon.getpoole.com)
 
+Learn more and contribute on [GitHub](https://github.com/poole).
 
+## Setup
 
+Some fun facts about the setup of this project include:
 
+* Built for [Jekyll](http://jekyllrb.com)
+* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
+* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
+* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+
+Thanks for reading!

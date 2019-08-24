@@ -16,7 +16,7 @@ In my case, I wanted them in shapefiles so that I could load it into Tableau, QG
 When I was writing the code, I didn't foresee myself having to run this code frequently, and likely only needing to produce them for small areas, like cities. I chose a projected coordinate system, as I needed the units of the hexagon sizes to be understandable by the end user, and went for a UTM-based one so that it can be replicable worldwide.
 
 #### Results
-<img src="assets/multiscale_hexagons.png" alt="Much Blue" width="80%" align="middle"/>
+<img src="assets/multiscale_hexagons.png" alt="Much Blue" width="200"/>
 
 #### Limitations
 Due to the choice of the projection coordinate system, distortion would occur if UTM zones are crossed. Larger hexagon sizes would suffer greater distortion.

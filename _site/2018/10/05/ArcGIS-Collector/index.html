@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Mobile Geospatial Data Collection - ArcCollector &middot; Kelman Chiang
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+  </head>
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/"> About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/all_posts/"> All Posts</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    
+
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; Kelman Chiang 2021
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kelman Chiang</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Mobile Geospatial Data Collection - ArcCollector</h1>
+  <span class="post-date">05 Oct 2018</span>
+  <p>In this post, I document my experience in building an ArcCollector setup within my organisation, discussing about my learning takeaways with the solution as well as designing the user journey.</p>
+
+<h3 id="what-is-geospatial-data-collection">What is <em>Geospatial</em> Data Collection?</h3>
+
+<p>Some examples of manual, non-tech primary data collection methods are surveys, ground observations and photos. What makes geospatial data collection different is the capture of the geographic location, such as longitude &amp; latitude, street/building name and postal codes. This allows for richer downstream geospatial analyses, alongside the traditional analytics.</p>
+
+<h3 id="what-is-arcgis-collector">What is ArcGIS Collector?</h3>
+
+<p>ArcGIS Collector (or ArcCollector for short) is a geospatial-enabled data collection mobile application. The workflow in ArcCollector is largely map-focused, where the user’s focus is centered on the map &amp; location of the collected data.</p>
+
+<p>Another ArcGIS solution is Survey123, which is built off the XLSForm specification and has a survey form-like workflow. I personally prefer the Survey123 over Collector, as it allows for more customisation of the data collection process (e.g. smart form flows, custom buttons), but has weaker geospatial capabilities.</p>
+
+<h3 id="overall-simplified-workflow">Overall Simplified Workflow</h3>
+
+<p>I simplified the process of creating the solution into 5 steps:</p>
+
+<h4 id="1-gather-the-user-requirements">1. Gather the user requirements</h4>
+
+<p>Understanding the user requirements and application usage is very important, as it would shape the development and features the application would need. With the user journey, workflow and needs in mind, potential pitfalls can be identified. For example, if ArcCollector is suitable for the problem, or if there is a deeper issue at hand.</p>
+
+<p>Beyond verbal meetings or written reports, having the field experience how/where the application would eventually used can surface requirements that were previously not thought of. An idea of the workflow cycle/intervals or a continuity plan would be useful in determining how long the project would be.</p>
+
+<h4 id="2-create-the-geodatabase">2. Create the geodatabase</h4>
+
+<p>The user requirements are then translated into the technical setup, in both the geodatabase design and on ArcGIS Online. The geodatabase data schema design has an influence on the user flow, as well as the possible analytics downstream. I found myself iterating over this to perfect the app behaviours and eventual workflows. Using arcpy, I automated the geodatabase creation process, to allow for replicability, tweaks and maintenance.</p>
+
+<p>This was probably point where I felt that ArcCollector is rather restrictive, relative to Survey123. Creating a questionnaire/survey based off a geodatabase may not be the most elegant solution for certain workflows. However, ArcCollector proved to more effective when the workflow is heavy on geospatial requirements.</p>
+
+<h4 id="3-setup-arcgis-portalonline--setup-arccollector">3. Setup ArcGIS Portal/Online &amp; setup ArcCollector</h4>
+
+<p>The settings in ArcGIS Portal/Online is more focused on the user access, appearance and interaction flows on the application, than the data per se. The UI/UX user requirements are translated here, into proper symbology, layers and tools that can be made available to the user. For example, having a symbology that is based on the user’s collected input.</p>
+
+<p>Because the ArcCollector mobile application has a mobile UI for the web map, I again found myself iterating numerous times on the desktop &amp; mobile device to figure out the optimal configurations.</p>
+
+<h4 id="4-operationalise--complete-the-workflow">4. Operationalise &amp; Complete the workflow</h4>
+
+<p>Of course, there has to be people using the application to collect data, which involves onboarding, application training and managing workflows. Creating user guides, engaging with users, conducting hands-on training sessions would be integral in getting the application well used and clean data being collected.</p>
+
+<p>At this juncture, it might be good to revisit step 1, to see if there are potential improvements for the application or even uncover what other workflows can tap on a similar solution.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2019/08/24/Running-Index-for-SQL-Queries/">
+            Running Index for SQL Queries
+            <small>24 Aug 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2019/08/02/Multiscale-Hexagon-Shapefiles/">
+            Multi-scale Hexagons
+            <small>02 Aug 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

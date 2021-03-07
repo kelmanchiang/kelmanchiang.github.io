@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 pygments:         true
 
 # Permalinks
@@ -15,7 +15,7 @@ author:
   name:           'Kelman Chiang'
   url:            'https://kelmanchiang.github.io/'
 
-paginate:         3
+paginate:         1
 plugins:          [jekyll-paginate]
 
 # Custom vars

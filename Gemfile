@@ -8,5 +8,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'redcarpet'
   gem 'kramdown'
+  gem 'rouge'
 
 end

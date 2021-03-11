@@ -1,0 +1,18 @@
+I"�<p><a href="https://github.com/kelmanchiang/multiscale-hexagons">https://github.com/kelmanchiang/multiscale-hexagons</a></p>
+
+<h4 id="challenge">Challenge</h4>
+<p>Frustrated at existing open source solutions (<a href="https://uber.github.io/h3/#/">Uber’s H3</a>, <a href="http://s2geometry.io/">Google’s S2</a>), I decided to code out my own Python script to generate multi-scale, tessellating hexagons.</p>
+
+<p>I needed a simple shapefile of hexagons, that tesselate neatly along its vertices/edges, and in multiple sizes so that my scale of analyses could be drilled up or down as required.</p>
+
+<p>In my case, I wanted them in shapefiles so that I could load it into Tableau, QGIS and PostGIS databases as a base spatial dataset further analyses with other datasets.</p>
+
+<h4 id="method">Method</h4>
+<p>When I was writing the code, I didn’t foresee myself having to run this code frequently, and likely only needing to produce them for small areas, like cities. I chose a projected coordinate system, as I needed the units of the hexagon sizes to be understandable by the end user, and went for a UTM-based one so that it can be replicable worldwide.</p>
+
+<h4 id="results">Results</h4>
+<p><img src="assets/multiscale_hexagons.png" alt="Much Blue" width="80%" align="middle" /></p>
+
+<h4 id="limitations">Limitations</h4>
+<p>Due to the choice of the projection coordinate system, distortion would occur if UTM zones are crossed. Larger hexagon sizes would suffer greater distortion.</p>
+:ET

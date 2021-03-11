@@ -1,0 +1,27 @@
+I"#<p>I’ve been a Data Analytics Mentor on Sprinboard for awhile now, and when students finish the curriculum, they seem to wonder what’s next for them. After all, they’ve been through a rigorous bootcamp that has equipped them with the core skills of being a Data Analyst. As the name of the program suggests, there is much more to learn and the bootcamp is just a stepping stone. For my past, present &amp; future students, here’s a list of resources that I’ve compiled which would be useful for the continued learning in the field of data.</p>
+
+<h3 id="sql-practice">SQL practice</h3>
+
+<p>I cannot emphasize the importance of SQL in interviews. Not only does your code need to execute correctly, the code has to be written fast &amp; has to run (somewhat) efficiently. These are some great resources of SQL challenges where you can practice your code. Also do spend time looking at other people’s solutions in the discussions tab. SQL can be written in so many ways, reading other solutions is a great way to learn as well.</p>
+
+<p><a href="http://hackerrank.com/">HackerRank</a><br />
+<a href="https://leetcode.com/problemset/database/">Leetcode</a><br />
+<a href="https://mode.com/sql-tutorial/">Mode Analytics</a><br />
+<a href="https://coderbyte.com/challenges">Coderbyte</a><br />
+<a href="https://www.codewars.com/">Codewars</a></p>
+
+<p>When you run out of challenges, try creating your own problems and challenge yourself further. Create your own <a href="https://www.db-fiddle.com/">mini database</a>, or use public datasets on <a href="https://cloud.google.com/bigquery/public-data">Bigquery</a>.</p>
+
+<h3 id="other-interview-prep">Other interview prep</h3>
+
+<p>Outside of the guided curriculum, it would take more self discipline to continue practicing your newfound skills and keep them fresh in your mind. Some non technical skills are also harder to practice. My suggestion here is to sign up for these daily newsletters, which emails you daily questions where you can practice further. Some of the are a mixed bag of data and product questions, whilst others are better suited for software engineers.</p>
+
+<p><a href="https://www.interviewqs.com/">InterviewQs</a><br />
+<a href="https://www.dailycodingproblem.com/">Daily Coding Problem</a><br />
+<a href="https://dailyproductprep.com/">Daily Product Prep</a><br />
+<a href="https://www.interviewcake.com/">Interview Cake</a></p>
+
+<h3 id="continue-learning--building-your-portfolio">Continue learning &amp; building your portfolio</h3>
+
+<p>Your learning doesn’t stop after the course! There are other skillsets and topics that a Data Analyst should have, such as AB testing and Statistics. I like this course from <a href="https://www.udacity.com/course/ab-testing--ud257">Udacity</a>, which covers AB testing really well. Kaggle has countless of projects that you can embark on to demonstrate your visualization or analytics skills too. Even with a repertoire of projects under your belt, nothing beats real world experience. Some ways to get experience would be to volunteer, or to do internships at smaller organisations.</p>
+:ET
